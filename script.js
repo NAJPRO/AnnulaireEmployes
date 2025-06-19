@@ -69,8 +69,16 @@ function reloadTable(listeEmployes) {
         tdPoste.textContent = employe.poste;
 
         const btnDelete = document.createElement('button');
-        btnDelete.textContent = 'Supprimer';
         btnDelete.className = 'delete';
+        //<i class="fa-solid fa-remove"></i>
+        const faI = document.createElement('i')
+        faI.className = "fa-solid fa-remove"
+        const spanEl = document.createElement('span')
+        spanEl.textContent = "Supprimer"
+
+        btnDelete.appendChild(faI)
+        btnDelete.appendChild(spanEl)
+
         btnDelete.addEventListener('click', function() {
             tbody.removeChild(tr); // Supprime la ligne du tableau
             deleteUser(employe.email)
