@@ -1,0 +1,144 @@
+/* Reset et base */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f8ff, #e0ffff);
+    padding: 20px;
+}
+
+.card-title{
+    background-color: #20b2aa;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 128, 128, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#title {
+    font-size: 3rem;
+
+}
+
+.validation{
+    color: red;
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: bold;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Cartes de style */
+.card-form, .card-table {
+    background-color: #ffffffcc;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 128, 128, 0.1);
+    flex: 1 1 400px;
+    min-width: 300px;
+}
+
+/* Titres */
+.card-form h1,
+.card-table h1 {
+    color: #008080;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #20b2aa;
+    padding-bottom: 5px;
+}
+
+/* Formulaire */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.delete{
+    background-color: red;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #20b2aa;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #008080;
+    background-color: #f0fdfa;
+}
+
+/* Bouton */
+button {
+    padding: 10px 20px;
+    background-color: #20b2aa;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #008080;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #20b2aa;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0fafa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

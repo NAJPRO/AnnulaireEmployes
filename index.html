@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annulaire Employé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="card-title">
+        <h1 id="title">Annulaire de gestion d'employer</h1>
+    </div>
+    <div class="container">
+        <!-- Création d'un formulaire pour ajouter des employer -->
+        <div class="card-form">
+            <h1>Ajouter un Employé</h1>
+            <form action="#" id="formulaire" method="post">
+                <div>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Donfack" required>
+                    <span class="validation" id="spanName"></span>
+
+                </div>
+                <div>
+                    <label for="prenom">Prenom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Jean" required>
+                    <span class="validation" id="spanPrenom"></span>
+
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    <span class="validation" id="spanEmail"></span>
+                </div>
+                <div>
+                    <label for="poste">Poste/Fonction</label>
+                    <input type="text" name="poste" id="poste" placeholder="Développeur" required>
+                    <span class="validation" id="spanPoste"></span>
+
+                </div>
+                <div>
+                    <button type="submit" id="add"><i class="fa-solid fa-plus"></i><span> Ajouter</span></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Tableau pour afficher la liste d'employer -->
+        <div class="card-table">
+            <h1>Liste des Employés</h1>
+            <table id="tableau">
+                <thead>
+                    <tr>
+                        <th>Nom complet</th>
+                        <th>Email</th>
+                        <th>Fonction</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="employes">
+                    <!-- Les données des employés seront insérées ici -->
+                     <!-- Données fictive avec un bouton supprimer -->
+                      
+                </tbody>
+            </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
