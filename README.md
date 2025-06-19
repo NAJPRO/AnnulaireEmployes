@@ -1,3 +1,6 @@
+# NZOUSI MBOUNGNIA AUDIN JUNIOR
+# 691019706
+
 # Annuaire des Employés
 
 Une application web simple développée avec **HTML**, **CSS** et **JavaScript** pour gérer un **annuaire d'employés**.  
@@ -54,8 +57,7 @@ AnnulaireEmployes/
 ---
 
 
-## Auteur
-
-Développé par **Audin Junior** (@NAJPRO)
+## Bonus
+    - Vérification de l'unicité de l'email
 
 
